@@ -1,5 +1,5 @@
 import React from "react";
-import "./header.modules.css";
+import "./header.css";
 import NetflixLogo from "../../assets/images/Netflix-logo.jpg";
 import SearchIcon from "@mui/icons-material/Search";
 import NotificationsNoneIcon from "@mui/icons-material/NotificationsNone";
