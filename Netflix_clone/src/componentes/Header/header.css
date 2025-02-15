@@ -1,21 +1,21 @@
- .header_outer_container {
+.header_outer_container {
   position: sticky;
   top: 0;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(148, 132, 132);
-   background-color: rgb(20, 20, 20);
+  /* background-color: rgb(148, 132, 132); */
+  background-color: rgb(20, 20, 20);
   background-color: turquoise;
   height: 10vh;
   color: white;
   transition: all 0.5s;
   transition-timing-function: ease-in;
-  z-index: 1; 
- background-color: red; */
+  z-index: 1;
+  /* background-color: red;  */
 }
 .nav_black {
-  background-color: rgb(20, 20, 20); */
+  background-color: rgb(20, 20, 20);
 }
 .header_container {
   width: 90%;
@@ -23,19 +23,17 @@
   justify-content: space-between;
   align-items: center;
 }
- 
-
 
 /* Netflix-style header */
 .header_outer_container {
   width: 100%;
-   background-color: #141414; /* Netflix black */
-   position: fixed; 
+  background-color: #141414; /* Netflix black */
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 1000;
-  transition: background-color 0.3s ease-in-out; */
-} 
+  transition: background-color 0.3s ease-in-out;
+}
 
 /* Inner container for layout */
 .header_container {
@@ -128,4 +126,4 @@
   .header_right {
     margin-left: auto;
   }
-} 
+}
