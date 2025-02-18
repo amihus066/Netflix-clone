@@ -1,109 +1,18 @@
-/* Netflix-style footer */
-.footer_outer_container {
-  width: 100%;
-  background-color: #141414; /* Netflix dark background */
-  color: #757575; /* Netflix gray text */
-  padding: 40px 0;
-  display: flex;
-  justify-content: center;
+/* footer.css */
+
+.footer_icons a {
+  /* Target the anchor tags within the icons container */
+  color: #aaa; /* Example: a slightly muted color */
+  transition: color 0.3s ease; /* Example: a smooth color transition on hover */
 }
 
-/* Inner container to structure layout */
-.footer_inner_container {
-  width: 80%;
-  max-width: 1000px;
-  text-align: center;
+.footer_icons a:hover {
+  color: white; /* Change color on hover */
 }
 
-/* Social media icons */
-.footer_icons {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-  margin-bottom: 20px;
-}
-/* link our techer */
-/* .footer_icons {
-    width: 12%;
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  margin-left: 10px;
-  color: #fff;
-} */
-
-.footer_icons svg {
-  color: #757575;
-  font-size: 24px;
-  cursor: pointer;
-  transition: color 0.3s ease-in-out;
+/* Example: override a specific Bootstrap margin (use sparingly!) */
+.mt-3 {
+  margin-top: 1.5rem !important; /* Increase the default margin-top */
 }
 
-.footer_icons svg:hover {
-  color: #e50914; /* Netflix Red */
-}
-
-/* Footer navigation links */
-.footer_data {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
-  margin-bottom: 20px;
-}
-
-.footer_data ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-.footer_data li {
-  margin-bottom: 10px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: color 0.3s ease-in-out;
-}
-
-.footer_data li:hover {
-  color: #ffffff;
-}
-
-/* Service Code Button */
-.service_code {
-  margin-bottom: 20px;
-}
-
-.service_code p {
-  display: inline-block;
-  border: 1px solid #757575;
-  padding: 8px 15px;
-  font-size: 14px;
-  cursor: pointer;
-  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.service_code p:hover {
-  background-color: #e50914;
-  color: white;
-}
-
-/* Copyright Notice */
-.copy-write {
-  font-size: 13px;
-  color: #757575;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .footer_data {
-    grid-template-columns: repeat(2, 1fr); /* Two columns on smaller screens */
-    text-align: left;
-  }
-}
-
-@media (max-width: 480px) {
-  .footer_data {
-    grid-template-columns: repeat(1, 1fr); /* Single column on mobile */
-    text-align: left;
-  }
-}
+/* Add your other custom styles here, being mindful of Bootstrap's classes */
