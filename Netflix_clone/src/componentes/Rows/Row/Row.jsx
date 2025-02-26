@@ -61,6 +61,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
             }`}
             alt={movie.name}
             className={`row__poster ${isLargeRow && "row__posterLarge"}`}
+            onError={(e) => (e.target.style.display = "none")}
           />
         ))}
       </div>

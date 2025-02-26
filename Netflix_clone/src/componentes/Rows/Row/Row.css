@@ -2,26 +2,29 @@
   width: 100%;
   object-fit: contain;
   max-height: 100px;
+  margin-right: 10px;
   transition: transform 450ms;
   margin-right: 10px;
 }
 .row__posters {
   display: flex;
-  /* overflow-y: hidden; */
-  /* overflow-x: scroll; */
+  overflow-y: hidden;
+  overflow-x: scroll;
   padding: 20px;
 }
-.row__poster::-webkit-scrollball {
+/*The content inside the element row_posters will still be scrollable, but the scrollbar itself will not be visible*/
+.row__posters::-webkit-scrollbar {
   display: none;
 }
 .row__poster:hover {
   transform: scale(1.08);
 }
+/*defining the size of the poster card image to 250px it was 100px */
 .row__posterLarge {
   max-height: 250px;
 }
 .row__posterLarge:hover {
-  transform: scale(1.9);
+  transform: scale(1.09);
 }
 .row {
   margin-left: 20px;
