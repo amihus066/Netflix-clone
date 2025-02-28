@@ -76,41 +76,37 @@
   /background: transparent;/
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .banner {
     height: 350px;
-    /* Reduce height for smaller screens */
+    
   }
 
   .banner_contents {
-    margin-left: 20px; /* Reduce margin for smaller screens */
+    margin-left: 20px; 
     padding-top: 100px;
   }
 
   .banner_title {
-    font-size: 2rem; /* Adjust title size for small screens */
+    font-size: 2rem; 
   }
 
   .banner_description {
-    font-size: 0.9rem; /* Smaller font for description */
-    max-width: 90%; /* Adjust width for better alignment */
+    font-size: 0.9rem; 
+    max-width: 90%; 
   }
 
   .banner_button .bannerbutton {
-    padding: 6px 15px; /* Smaller buttons */
+    padding: 6px 15px;
     font-size: 0.9rem;
   }
 }
-/*@media screen and (max-width: 576px) {
-  .banner {
-    height: 200px;
-  }
-}*/
+
 @media (max-width: 480px) {
   .banner {
     height: 250px;
-    /* Further reduce height for very small screens */
+   
   }
 
   .banner_contents {
@@ -118,16 +114,16 @@
   }
 
   .banner_title {
-    font-size: 1.5rem; /* Even smaller title */
+    font-size: 1.5rem; 
   }
 
   .banner_description {
     font-size: 0.8rem;
-    max-width: 100%; /* Full width for the description */
+    max-width: 100%; 
   }
 
   .banner_button {
-    padding: 5px 10px; /* Adjust button padding */
+    padding: 5px 10px; 
     font-size: 0.8rem;
   }
 }

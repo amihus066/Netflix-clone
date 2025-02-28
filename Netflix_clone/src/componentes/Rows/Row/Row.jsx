@@ -20,7 +20,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
         const request = await axios.get(fetchUrl);
         setMovies(request.data.results);
       } catch (error) {
-        console.log("Error fetching movies:", error);
+        console.error("Error fetching movies:", error);
       }
     })();
   }, [fetchUrl]);
@@ -34,7 +34,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
           const urlParams = new URLSearchParams(new URL(url).search);
           setTrailerUrl(urlParams.get("v"));
         })
-        .catch((error) => console.log(error));
+        .catch((error) => console.error(error));
     }
   };
 
@@ -52,7 +52,7 @@ const Row = ({ title, fetchUrl, isLargeRow }) => {
       <Swiper
         modules={[Navigation]}
         spaceBetween={10}
-        slidesPerView={5} // Adjust slides per view
+        slidesPerView={5}
         navigation
         loop={true}
         breakpoints={{

@@ -1,18 +1,12 @@
-/* footer.css */
-
 .footer_icons a {
-  /* Target the anchor tags within the icons container */
-  color: #aaa; /* Example: a slightly muted color */
-  transition: color 0.3s ease; /* Example: a smooth color transition on hover */
+  color: #aaa;
+  transition: color 0.3s ease;
 }
 
 .footer_icons a:hover {
-  color: white; /* Change color on hover */
+  color: white;
 }
 
-/* Example: override a specific Bootstrap margin (use sparingly!) */
 .mt-3 {
-  margin-top: 1.5rem !important; /* Increase the default margin-top */
+  margin-top: 1.5rem !important;
 }
-
-/* Add your other custom styles here, being mindful of Bootstrap's classes */
